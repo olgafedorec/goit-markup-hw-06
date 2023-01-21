@@ -414,7 +414,7 @@
             </ul>
           </div>
           <div class="footer-form-wrap">
-            <p class="footer-social-media">Subscribe</p>
+            <p class="footer-social-media footer-form-title">Subscribe</p>
             <form class="footer-form">
               <input
                 type="email"
@@ -423,12 +423,20 @@
                 name="user-email"
                 required
               />
-              <button type="submit">Subscribe</button>
+              <div class="footer-subscribe-wrap">
+                <button type="submit" class="footer-button">Subscribe</button>
+                <svg class="footer-subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </div>
             </form>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
@@ -438,52 +446,46 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-          <label
-            ><span class="modal-label">Name</span>
-            <div class="input-wrap">
-              <input
-                type="text"
-                class="modal-input"
-                placeholder=""
-                name="user-name"
-                required
-              />
-              <svg class="modal-input-icon" width="12" height="12">
-                <use href="./images/icons.svg#icon-icon-name"></use>
-              </svg>
-            </div>
-          </label>
+          <label><span class="modal-label">Name</span></label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              class="modal-input"
+              placeholder=""
+              name="user-name"
+              required
+            />
+            <svg class="modal-input-icon" width="12" height="12">
+              <use href="./images/icons.svg#icon-icon-name"></use>
+            </svg>
+          </div>
 
-          <label
-            ><span class="modal-label">Phone</span>
-            <div class="input-wrap">
-              <input
-                type="tel"
-                class="modal-input"
-                placeholder=""
-                name="user-tel"
-                required
-              />
-              <svg class="modal-input-icon" width="13" height="13">
-                <use href="./images/icons.svg#icon-icon-phone"></use>
-              </svg>
-            </div>
-          </label>
+          <label><span class="modal-label">Phone</span></label>
+          <div class="input-wrap">
+            <input
+              type="tel"
+              class="modal-input"
+              placeholder=""
+              name="user-tel"
+              required
+            />
+            <svg class="modal-input-icon" width="13" height="13">
+              <use href="./images/icons.svg#icon-icon-phone"></use>
+            </svg>
+          </div>
 
-          <label
-            ><span class="modal-label">Email</span>
-            <div class="input-wrap">
-              <input
-                type="email"
-                class="modal-input"
-                placeholder=""
-                name="user-email"
-              />
-              <svg class="modal-input-icon" width="15" height="12">
-                <use href="./images/icons.svg#icon-icon-mail"></use>
-              </svg>
-            </div>
-          </label>
+          <label><span class="modal-label">Email</span></label>
+          <div class="input-wrap">
+            <input
+              type="email"
+              class="modal-input"
+              placeholder=""
+              name="user-email"
+            />
+            <svg class="modal-input-icon" width="15" height="12">
+              <use href="./images/icons.svg#icon-icon-mail"></use>
+            </svg>
+          </div>
 
           <label for="user-text"
             ><span class="modal-label">Comment</span>
