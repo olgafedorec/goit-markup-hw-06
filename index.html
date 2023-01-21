@@ -413,6 +413,19 @@
               </li>
             </ul>
           </div>
+          <div class="footer-form-wrap">
+            <p class="footer-social-media">Subscribe</p>
+            <form class="footer-form">
+              <input
+                type="email"
+                class="footer-input"
+                placeholder="E-mail"
+                name="user-email"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -423,6 +436,86 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label
+            ><span class="modal-label">Name</span>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="modal-input"
+                placeholder=""
+                name="user-name"
+                required
+              />
+              <svg class="modal-input-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-icon-name"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label
+            ><span class="modal-label">Phone</span>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="modal-input"
+                placeholder=""
+                name="user-tel"
+                required
+              />
+              <svg class="modal-input-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-icon-phone"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label
+            ><span class="modal-label">Email</span>
+            <div class="input-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                placeholder=""
+                name="user-email"
+              />
+              <svg class="modal-input-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-icon-mail"></use>
+              </svg>
+            </div>
+          </label>
+
+          <label for="user-text"
+            ><span class="modal-label">Comment</span>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-comment"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <div class="modal-checkbox">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              value="true"
+              class="input-chek visually-hidden"
+            />
+            <label for="privacy" class="chek-text">
+              <span>
+                <svg class="chek-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-chek-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="chek-text-link">Privacy Policy</a></label
+            >
+          </div>
+          <div class="modal-form-wrap">
+            <button type="submit" class="modal-form-button">Send</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
